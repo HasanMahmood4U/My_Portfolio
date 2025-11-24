@@ -3,7 +3,7 @@ This is my personal portfolio website built using HTML, CSS, JavaScript, and enh
 It showcases my skills, projects, certificates, education, and experience, with a clean UI and mobile-friendly layout.
 
 🚀 Live Demo
-🔗 Live Portfolio: [Your GitHub Pages Link Here](https://hasanmahmood4u.github.io/My_Portfolio/)
+🔗 Live Portfolio:(https://hasanmahmood4u.github.io/My_Portfolio/)
 
 📌 Features
 ✅ Modern UI / UX
@@ -57,5 +57,5 @@ Canva (for design assets)
 If you want to collaborate, hire, or discuss opportunities:
 
 Email: hasanmahmood2hm@gmail.com
-LinkedIn: https://www.linkedin.com/in/yusufali8856
+LinkedIn: https://www.linkedin.com/in/hasan-mahmood777/
 GitHub: (https://github.com/HasanMahmood4U)
