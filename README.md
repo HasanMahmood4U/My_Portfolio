@@ -45,8 +45,9 @@ Font Awesome Icons
 Backend Services:
 EmailJS (for sending messages & auto-replies)
 Tools:
+
 VS Code
-Git & GitHub
+Git &  GitHub
 Canva (for design assets)
 📂 Folder Structure
 
