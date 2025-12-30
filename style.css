@@ -662,7 +662,7 @@ a, a:hover { text-decoration: none; }
     .contact-form textarea.form-control { height: 140px; padding: 12px; resize: none; }
     .contact-form .form-control:focus { border-color: var(--main-color); }
 
-/*FOOTER section work on this section*/
+/*FOOTER*/
 
 .footer { background-color: var(--main-color); }
     .footer .copyright-text {
