@@ -199,12 +199,12 @@ $(document).ready(function() {
         }
     })
 
-    //scrollit
+//scrollit
     $.scrollIt({
         topOffset:-50
     })
 
-    //Hiding Mobile Navbar when a nav link is clicked
+//Hiding Mobile Navbar when a nav link is clicked
     $(".nav-link").on("click", function() {
         $(".navbar-collapse").collapse("hide");
     })
