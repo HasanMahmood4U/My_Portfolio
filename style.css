@@ -89,7 +89,7 @@ a, a:hover { text-decoration: none; }
 
     .owl-carousel button.owl-dot.active { background-color: var(--main-color); }
 
-/*NAVBAR*/
+ /*NAVBAR*/
 .navbar { background-color: var(--white); padding: 30px 0; box-shadow: 0 10px 10px rgba(0, 0, 0, .08); transition: all .5s ease; }
     .navbar.navbar-shrink { padding: 20px 0; box-shadow: 0 10px 10px rgba(0, 0, 0, .1); }
     .navbar > .container { padding: 0 15px; }
