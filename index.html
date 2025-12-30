@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio In Progress | Hasan Mahmood</title>
+    <title>Hasan Mahmood | Coming Soon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="status-badge">Phase: Development</div>
-        <h1>Hasan Mahmood</h1>
-        <p class="subtitle">Something exciting is in the works.</p>
-        
-        <div class="progress-box">
-            <div class="progress-bar"></div>
+    <div id="particles-js"></div>
+
+    <div class="main-container">
+        <div class="icon-wrapper">
+            <div class="circle-progress">
+                <div class="inner-icon">
+                    <span>&lt;/&gt;</span>
+                </div>
+            </div>
+            <p class="phase-text">Phase: Development</p>
         </div>
-        
-        <p class="update-text">My new portfolio is currently being built. Check back soon!</p>
-        
-        <div class="links">
-            <a href="https://github.com/HasanMahmood4U" target="_blank">GitHub</a>
-            <a href="mailto:your-email@example.com">Contact Me</a>
+
+        <h1>Hasan Mahmood</h1>
+        <p class="tagline">Something exciting is in the works.</p>
+
+        <div class="progress-section">
+            <div class="progress-container">
+                <div class="progress-fill" style="width: 60%;">
+                    <div class="bubbles"></div>
+                </div>
+                <span class="percentage">60%</span>
+            </div>
+            <p class="info-text">My new portfolio is currently being built. Check back soon!</p>
+        </div>
+
+        <div class="countdown-card">
+            <p class="launching-label">Launching in:</p>
+            <div id="timer">00:00:00:00</div>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://github.com/HasanMahmood4U" class="btn outline">GitHub</a>
+            <a href="mailto:your-email@example.com" class="btn outline">Contact Me</a>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
