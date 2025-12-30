@@ -204,7 +204,11 @@ $(document).ready(function() {
         topOffset:-50
     })
 
+<<<<<<< HEAD
 //Hiding Mobile Navbar when a nav link is clicked ot change
+=======
+//Hiding Mobile Navbar when a nav link is clicked
+>>>>>>> 2ad0c7f (fixed the error)
     $(".nav-link").on("click", function() {
         $(".navbar-collapse").collapse("hide");
     })
