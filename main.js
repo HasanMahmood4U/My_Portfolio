@@ -1,25 +1,58 @@
- // Set the date we're counting down to
-const targetDate = new Date("Jan 30, 2026 00:00:00").getTime();
+// Animate on scroll
+const sections = document.querySelectorAll('.section');
 
-const timer = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
+function checkScroll() {
+    const triggerBottom = window.innerHeight / 5 * 4;
 
-    // Time calculations
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
 
-    // Format numbers to always show two digits (e.g., 05 instead of 5)
-    const format = (num) => num < 10 ? "0" + num : num;
+        if (sectionTop < triggerBottom) {
+            section.classList.add('animate');
+        } else {
+            section.classList.remove('animate'); // Optional: remove on scroll up
+        }
+    });
+}
 
-    document.getElementById("timer").innerHTML = 
-        `${format(days)}:${format(hours)}:${format(minutes)}:${format(seconds)}`;
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll); // Trigger on load
 
-    // If countdown is finished
-    if (distance < 0) {
-        clearInterval(timer);
-        document.getElementById("timer").innerHTML = "WE ARE LIVE!";
-    }
-}, 1000);
+// Hero avatar tilt interaction
+const avatar = document.querySelector('.hero-avatar');
+const avatarImg = document.querySelector('.hero-avatar-img');
+
+if (avatar && avatarImg) {
+    avatar.addEventListener('mousemove', (e) => {
+        const rect = avatar.getBoundingClientRect();
+        const x = e.clientX - rect.left; // x position within avatar
+        const y = e.clientY - rect.top;  // y position within avatar
+        const halfWidth = rect.width / 2;
+        const halfHeight = rect.height / 2;
+        const rotateY = ((x - halfWidth) / halfWidth) * 8; // tilt strength
+        const rotateX = -((y - halfHeight) / halfHeight) * 8;
+
+        avatarImg.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+    });
+
+    avatar.addEventListener('mouseleave', () => {
+        avatarImg.style.transform = '';
+    });
+}
+
+// CTA shake on click
+const cta = document.querySelector('.cta-button');
+if (cta) {
+    cta.addEventListener('click', (e) => {
+        // add shake class, remove after animation ends
+        cta.classList.remove('shake'); // reset in case
+        // force reflow to restart animation if needed
+        void cta.offsetWidth;
+        cta.classList.add('shake');
+        function onAnim() {
+            cta.classList.remove('shake');
+            cta.removeEventListener('animationend', onAnim);
+        }
+        cta.addEventListener('animationend', onAnim);
+    });
+}

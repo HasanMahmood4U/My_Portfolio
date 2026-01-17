@@ -3,45 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan Mahmood | Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hasan Mahmood - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="particles-js"></div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">HASAN MAHMOOD</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="main-container">
-        <div class="icon-wrapper">
-            <div class="circle-progress">
-                <div class="inner-icon">
-                    <span>&lt;/&gt;</span>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm Hasan Mahmood</h1>
+                    <p class="hero-subtitle">Front-End Developer | Aspiring Full-Stack Web Developer</p>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                    <div class="hero-social" aria-label="Social links">
+                        <a class="social-link" href="https://github.com/HasanMahmood4U" target="_blank" rel="noopener" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.88-1.43-3.88-1.43-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 012.89-.39c.98 0 1.97.13 2.89.39 2.19-1.5 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.67.41.36.77 1.08.77 2.18 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55C20.71 21.38 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"></path></svg>
+                        </a>
+                        <a class="social-link" href="https://www.linkedin.com/in/hasan-mahmood777/" target="_blank" rel="noopener" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.1.88 1.98 1.98 1.98 1.1 0 1.98-.88 1.98-1.98C6.96 4.38 6.08 3.5 4.98 3.5zM3.5 8.98h3v11.02h-3V8.98zM9.5 8.98h2.86v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v6.48h-3V14.6c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.62-2.38 3.28v5.9H9.5V8.98z"></path></svg>
+                        </a>
+                        <a class="social-link" href="mailto:hasanmahmood2hm@gmail.com" title="Email">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                        </a>
+                        <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.3 4.3 0 001.88-2.38c-.83.5-1.77.85-2.76 1.05A4.28 4.28 0 0015.5 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.12.98-3.56-.18-6.72-1.88-8.84-4.47-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.82 1.92 3.59-.71-.02-1.38-.22-1.97-.55v.05c0 2.09 1.49 3.83 3.47 4.23-.36.1-.74.15-1.13.15-.28 0-.55-.03-.82-.08.55 1.72 2.15 2.97 4.04 3.01A8.6 8.6 0 012 19.54 12.13 12.13 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.36 8.36 0 0022.46 6z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar" aria-hidden="false">
+                    <!-- Image path updated to match workspace file -->
+                    <img src="profile.jpg/image.jpg.png" alt="Hasan Mahmood" class="hero-avatar-img">
+                </div>
+                <div class="hero-badges" aria-hidden="true">
+                    <div class="badge">HTML</div>
+                    <div class="badge">CSS</div>
+                    <div class="badge">JS</div>
+                    <div class="badge">React</div>
+                    <div class="badge">Firebase</div>
+                    <div class="badge">Git</div>
+                    <div class="badge">GitHub</div>
                 </div>
             </div>
-            <p class="phase-text">Phase: Development</p>
         </div>
+    </section>
 
-        <h1>Hasan Mahmood</h1>
-        <p class="tagline">Something exciting is in the works.</p>
-
-        <div class="progress-section">
-            <div class="progress-container">
-                <div class="progress-fill" style="width: 60%;">
-                    <div class="bubbles"></div>
-                </div>
-                <span class="percentage">60%</span>
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="showcase-card">
+                <p class="about-text">
+                    Aspiring Full-Stack Web Developer currently pursuing BCA, with hands-on experience building clean, modern user interfaces using React.js and Tailwind CSS. Familiar with tools such as Firebase and Git/GitHub, and passionate about creating responsive, user-focused web applications. Actively seeking an internship or junior role to contribute to real-world projects and continue growing as a developer.
+                </p>
             </div>
-            <p class="info-text">My new portfolio is currently being built. Check back soon!</p>
         </div>
+    </section>
 
-        <div class="countdown-card">
-            <p class="launching-label">Launching in:</p>
-            <div id="timer">00:00:00:00</div>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">SCSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">TypeScript</div>
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Next.js</div>
+                <div class="skill-item">Tailwind CSS</div>
+                <div class="skill-item">Styled-Components</div>
+                <div class="skill-item">Jenkins</div>
+                <div class="skill-item">SonarQube</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">GitHub</div>
+                <div class="skill-item">REST API</div>
+                <div class="skill-item">Linux</div>
+                <div class="skill-item">WebSocket</div>
+                <div class="skill-item">Firebase</div>
+                <div class="skill-item">Agile Methodology</div>
+            </div>
         </div>
+    </section>
 
-        <div class="btn-group">
-            <a href="https://github.com/HasanMahmood4U" class="btn outline">GitHub</a>
-            <a href="mailto:your-email@example.com" class="btn outline">Contact Me</a>
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item showcase-card">
+                <h3>BCA (2024 – 2027)</h3>
+                <p>Bangalore City University</p>
+                <p>AL-AMEEN INSTITUTE OF INFORMATION SCIENCE, BANGALORE</p>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card showcase-card">
+                    <h3>CivicSpaceApp</h3>
+                    <p>Built a community-driven web application that allows residents to report civic issues like damaged roads or garbage collection problems. Developed a responsive front-end using HTML, CSS, TypeScript, and JavaScript. Integrated Firebase for real-time database and authentication. Used Git/GitHub for version control.</p>
+                    <a href="https://hasanmahmood4u.github.io/CivicSpaceApp/" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="project-card showcase-card">
+                    <h3>h.m.ai.chatbot</h3>
+                    <p>Developed a high-performance AI Chatbot using Next.js App Router. Integrated a Unified API for multiple LLM providers (OpenAI, Anthropic, xAI). Implemented dynamic chat hooks and generative UIs. Managed data with Neon Serverless Postgres and Vercel Blob.</p>
+                    <a href="#" class="project-link">View Project</a> <!-- Add link if available -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +91 6201568922</p>
+                <p><strong>Email:</strong> <a href="mailto:hasanmahmood2hm@gmail.com">hasanmahmood2hm@gmail.com</a></p>
+                <p><strong>Portfolio:</strong> <a href="https://hasanmahmood4u.github.io/Projects/" target="_blank">https://hasanmahmood4u.github.io/Projects/</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hasan-mahmood777/" target="_blank">https://www.linkedin.com/in/hasan-mahmood777/</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/HasanMahmood4U" target="_blank">https://github.com/HasanMahmood4U</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Hasan Mahmood. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
