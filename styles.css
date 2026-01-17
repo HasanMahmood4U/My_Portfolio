@@ -244,6 +244,30 @@ body {
     transform: translateY(-3px);
 }
 
+/* Download resume button (outline) */
+.download-button {
+    display: inline-block;
+    padding: 0.7rem 1.25rem;
+    margin-left: 0.6rem;
+    color: var(--on-accent);
+    text-decoration: none;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.18);
+    background: transparent;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.download-button:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-3px);
+}
+
+/* If user prefers the download to highlight on hover with green */
+.download-button:active, .download-button:focus {
+    outline: none;
+    box-shadow: 0 10px 28px rgba(46,204,113,0.12);
+}
+
 /* Click-triggered shake animation */
 @keyframes shake {
     0% { transform: translateX(0); }
