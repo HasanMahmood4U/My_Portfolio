@@ -20,6 +20,7 @@
         --menu-color-3: #00BFA6; /* teal */
         --menu-color-4: #FF6B6B; /* coral */
         --menu-color-5: #FFB86B; /* amber */
+        --menu-blur-gray: rgba(128,128,128,0.12); /* stronger gray tint for blurred menus */
     --footer-bg: #0b1220; /* dark footer */
     --on-accent: #ffffff; /* text on accent */
     --shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
@@ -39,7 +40,8 @@ body {
     top: 0;
     width: 100%;
     /* translucent glass effect */
-    background: rgba(243, 241, 241, 0.06);
+    /* subtle gray overlay + translucent layer for a gray-tinted blur */
+    background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), rgba(243, 241, 241, 0.06);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -78,7 +80,7 @@ body {
     padding: 0.45rem 0.9rem;
     margin-left: 0.5rem;
     border-radius: 999px;
-    background: linear-gradient(90deg, rgba(46,204,113,0.12), rgba(0,191,166,0.06));
+    background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, rgba(46,204,113,0.12), rgba(0,191,166,0.06));
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     box-shadow: 0 6px 18px rgba(12,23,56,0.06);
@@ -92,11 +94,11 @@ body {
 }
 
 /* Give each menu item its own color */
-.nav-links li:nth-child(1) a { background: linear-gradient(90deg, var(--menu-color-1), rgba(46,204,113,0.12)); color: var(--on-accent); }
-.nav-links li:nth-child(2) a { background: linear-gradient(90deg, var(--menu-color-2), rgba(108,92,231,0.12)); color: var(--on-accent); }
-.nav-links li:nth-child(3) a { background: linear-gradient(90deg, var(--menu-color-3), rgba(0,191,166,0.12)); color: var(--on-accent); }
-.nav-links li:nth-child(4) a { background: linear-gradient(90deg, var(--menu-color-4), rgba(255,107,107,0.12)); color: var(--on-accent); }
-.nav-links li:nth-child(5) a { background: linear-gradient(90deg, var(--menu-color-5), rgba(255,184,107,0.12)); color: var(--on-accent); }
+.nav-links li:nth-child(1) a { background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, var(--menu-color-1), rgba(46,204,113,0.12)); color: var(--on-accent); }
+.nav-links li:nth-child(2) a { background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, var(--menu-color-2), rgba(108,92,231,0.12)); color: var(--on-accent); }
+.nav-links li:nth-child(3) a { background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, var(--menu-color-3), rgba(0,191,166,0.12)); color: var(--on-accent); }
+.nav-links li:nth-child(4) a { background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, var(--menu-color-4), rgba(255,107,107,0.12)); color: var(--on-accent); }
+.nav-links li:nth-child(5) a { background: linear-gradient(var(--menu-blur-gray), var(--menu-blur-gray)), linear-gradient(90deg, var(--menu-color-5), rgba(255,184,107,0.12)); color: var(--on-accent); }
 
 /* Hero Section */
 .hero {
